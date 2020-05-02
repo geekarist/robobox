@@ -28,10 +28,8 @@ void setup() {
   Serial.println(" OK");
 }
 
-int motion = 0;
-
 void loop() {
-  motion = digitalRead(PIN_MOTION);
+  int motion = digitalRead(PIN_MOTION);
 
   if (motion == HIGH) {
     Serial.println("Motion is HIGH");

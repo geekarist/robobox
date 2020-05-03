@@ -1,9 +1,9 @@
-#include "MiniAlarm.h"
+#include "ArticulatedArm.h"
 
 void setup() {
-    minialarm::setup();
+    articulatedarm::setup();
 }
 
 void loop() {
-    minialarm::loop();
+    articulatedarm::loop();
 }

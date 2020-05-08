@@ -1,9 +1,13 @@
+#include "Arduino.h"
 #include "ArticulatedArm.h"
 
 void setup() {
-    articulatedarm::setup();
+  Serial.begin(9600);
+  Serial.println("Setup");
+  articulatedarm::setup();
 }
 
 void loop() {
-    articulatedarm::loop();
+  Serial.println("Loop");
+  articulatedarm::loop();
 }
